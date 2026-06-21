@@ -12,7 +12,7 @@ Wholesale buyers need to review products quickly before contacting sales. They u
 
 ## Solution Overview
 
-This SPA organizes frozen seafood, sushi-grade products, and premium meat items into a searchable product catalog. Buyers can filter by category, save products, add items to a quote cart, adjust quantities, submit a buyer-information form, receive a generated quote reference number, and review a front-end order-status timeline. Phase 2 adds a local quote/order history panel where saved requests can be searched, filtered, restored to cart, exported, advanced through demo statuses, or deleted. Phase 3 adds an admin-style dashboard. Phase 4A adds a backend-ready data-service layer that keeps GitHub Pages compatibility while preparing the workflow for Supabase/database integration.
+This SPA organizes frozen seafood, sushi-grade products, and premium meat items into a searchable product catalog. Buyers can filter by category, save products, add items to a quote cart, adjust quantities, submit a buyer-information form, receive a generated quote reference number, and review a front-end order-status timeline. Phase 2 adds a local quote/order history panel where saved requests can be searched, filtered, restored to cart, exported, advanced through demo statuses, or deleted. Phase 3 adds an admin-style dashboard. Phase 4A adds a backend-ready data-service layer that keeps GitHub Pages compatibility while preparing the workflow for Supabase/database integration. Phase 4A.1 adds responsive/UI polish, Phase 4A.2 applies a blue/navy corporate theme aligned with B2B wholesale, cold-chain, and logistics branding, and Phase 4A.3 adds a stronger product catalogue section with printable buyer quick-reference tools.
 
 ## Current Buyer Workflow
 
@@ -40,9 +40,11 @@ Visit website
 ## Key Features
 
 - Responsive landing page for desktop, tablet, and mobile
-- Product catalog rendered from JavaScript data
+- Blue/navy corporate theme with dark-blue header/footer treatment, blue CTAs, and light ice-blue card accents
+- Product catalogue rendered from JavaScript data
+- Phase 4A.3 product catalogue section with summary cards, expanded category filters, compact buyer catalogue sheet, print action, and copyable SKU list
 - Polished B2B product cards with SKU, origin, pack size, MOQ, lead time, storage temperature, stock status, and wholesale price display
-- Category filtering for seafood, meat, and sushi-grade items
+- Category filtering for seafood, meat, sushi-grade, hotpot, dimsum, and value-added items
 - Product search modal with SKU, pack-size, and MOQ matching
 - Quote cart drawer with quantity controls
 - Estimated subtotal calculation
@@ -98,6 +100,29 @@ sikat-araw-wholesale-ecommerce-spa/
     └── screenshots/
         └── README.md
 ```
+
+
+## Phase 4A.3 - Product Catalogue Section
+
+This version strengthens the buyer-facing product catalogue so the website can be presented as a clearer wholesale product catalogue, not only a product-card grid.
+
+### Added in Phase 4A.3
+
+- Renamed the main product experience to **Product Catalogue**
+- Added catalogue summary cards for total SKUs, catalogue groups, buyer format, and storage type
+- Expanded category filters to seafood, meat, sushi-grade, hotpot, dimsum, and value-added items
+- Added additional catalogue products for hotpot, dimsum, value-added seafood, and K-BBQ buyers
+- Added buyer-use notes and case configuration details to product cards
+- Added a compact buyer quick-reference catalogue table
+- Added **Print Catalogue** action for printable catalogue review
+- Added **Copy SKU List** action for sharing catalogue details with buyers or sales staff
+- Improved search coverage for lead time, case configuration, and buyer-use terms
+
+A future version can generate a downloadable PDF catalogue under `docs/catalogue/`, but this phase keeps the project GitHub Pages-compatible and front-end only.
+
+## Phase 4A.2 Theme Update
+
+The interface has been restyled using a blue, dark blue, and navy blue palette to better match a corporate wholesale/logistics brand direction. The update replaces the earlier red/coral accent system with navy headers, blue CTAs, ice-blue panels, and cleaner business-dashboard styling while preserving the same quote workflow, localStorage fallback, admin dashboard, and backend-ready service layer.
 
 ## How to Run Locally
 
@@ -183,6 +208,22 @@ This version adds an internal dashboard layer to make the project feel closer to
 
 The dashboard is still front-end only. It reads from `localStorage`, so records are stored only in the current browser. Real multi-user dashboards, authentication, payment verification, stock deduction, file uploads, and cross-device order tracking should be added later with a backend/database such as Supabase, Firebase, or Node.js + PostgreSQL.
 
+
+
+
+## Phase 4A.1 - UI and Responsive Polish
+
+This version tightens the Phase 4A interface before continuing into real database setup. It focuses on presentation quality for GitHub Pages and portfolio review.
+
+### Added in Phase 4A.1
+
+- Improved mobile layout for backend readiness cards
+- Fixed backend panel text wrapping and horizontal overflow
+- Improved modal responsiveness on small screens
+- Improved admin dashboard button wrapping and KPI readability
+- Added cleaner whole-number metric formatting for dashboard average quote value
+- Added a portfolio demo reminder to avoid using real personal data in screenshots
+- Updated form placeholders to use safer demo-style wording
 
 ## Phase 4A - Backend-Ready Data Service
 
