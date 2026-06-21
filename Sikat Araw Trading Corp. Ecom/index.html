@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arctic Fresh | Premium Frozen Food Imports</title>
+  <meta name="description" content="Arctic Fresh imports premium frozen seafood and meats with cold-chain precision, sustainable sourcing, and ocean-to-table quality." />
+  <meta name="theme-color" content="#0c1b2d" />
+  <meta property="og:title" content="Arctic Fresh | Premium Frozen Food Imports" />
+  <meta property="og:description" content="Premium frozen seafood and meats handled with cold-chain discipline for restaurants, retailers, and serious home kitchens." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="utility-bar">
+      <div class="container">
+        <div class="utility-group">
+          <a class="utility-link" href="tel:+18005550199"><i class="fa-solid fa-phone"></i> +1 (800) 555-0199</a>
+          <a class="utility-link" href="mailto:orders@arcticfresh.com"><i class="fa-regular fa-envelope"></i> orders@arcticfresh.com</a>
+        </div>
+        <div class="utility-group">
+          <div class="switcher" aria-label="Language switcher">
+            <i class="fa-solid fa-globe"></i>
+            <button type="button" class="active" data-language="EN" aria-pressed="true">EN</button>
+            <button type="button" data-language="AR" aria-pressed="false">AR</button>
+          </div>
+          <div class="switcher" aria-label="Currency switcher">
+            <i class="fa-solid fa-coins"></i>
+            <button type="button" class="active" data-currency="USD" aria-pressed="true">USD</button>
+            <button type="button" data-currency="EUR" aria-pressed="false">EUR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="main-nav">
+      <div class="container">
+        <a class="brand" href="#home" aria-label="Arctic Fresh home">
+          <span class="brand-mark"><i class="fa-solid fa-snowflake"></i></span>
+          <span class="brand-text">
+            <strong>Arctic Fresh</strong>
+            <span>Premium frozen imports for ocean-to-table kitchens</span>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#recipes">Recipes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-actions" aria-label="Quick actions">
+          <button class="icon-btn" id="searchButton" type="button" aria-label="Search products" aria-controls="searchModal">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="icon-btn" id="accountButton" type="button" aria-label="Trade account information" aria-controls="infoModal">
+            <i class="fa-regular fa-user"></i>
+          </button>
+          <button class="icon-btn" id="cartButton" type="button" aria-label="Open cart" aria-controls="cartDrawer" aria-expanded="false">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <span class="eyebrow"><i class="fa-solid fa-temperature-low"></i> Cold-chain precision, premium quality</span>
+              <h1>Pure frozen seafood and meats, delivered with ocean-to-table confidence.</h1>
+              <p>
+                Arctic Fresh sources MSC/ASC certified seafood and premium imported meats through a tightly managed cold chain,
+                preserving peak texture, taste, and integrity from origin to your kitchen.
+              </p>
+              <div class="hero-actions">
+                <a class="pill-btn primary" href="#products"><i class="fa-solid fa-arrow-right"></i> Shop Premium Imports</a>
+                <a class="pill-btn outline" href="#about"><i class="fa-regular fa-circle-play"></i> Explore Our Cold Chain</a>
+              </div>
+              <div class="hero-points" aria-label="Key value propositions">
+                <span class="hero-point"><i class="fa-solid fa-fish-fins"></i> MSC/ASC Certified</span>
+                <span class="hero-point"><i class="fa-solid fa-snowflake"></i> Deep-Frozen Logistics</span>
+                <span class="hero-point"><i class="fa-solid fa-leaf"></i> Sustainable Sourcing</span>
+              </div>
+            </div>
+
+            <div class="hero-visual">
+              <div class="hero-card">
+                <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=80" alt="Chef preparing premium seafood on a cutting board" />
+                <div class="hero-card-footer">
+                  <div>
+                    <strong>Certified traceability</strong>
+                    <span>Imported from trusted global fisheries and ranches</span>
+                  </div>
+                  <div class="hero-stat">
+                    <strong>24/7</strong>
+                    <span>cold-chain monitoring</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categories-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Categories</span>
+          <h2 id="categories-title">Curated frozen essentials for chefs, retailers, and premium home kitchens.</h2>
+          <p>From Nordic waters to world-class ranches, each category is selected for clean sourcing, dependable supply, and uncompromising frozen quality.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-fish"></i></div>
+            <div>
+              <h3>Norwegian Salmon</h3>
+              <p>Rich, buttery fillets with export-grade freeze lock.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-icicles"></i></div>
+            <div>
+              <h3>Greenland Halibut</h3>
+              <p>Lean, flaky texture ideal for fine dining menus.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-drumstick-bite"></i></div>
+            <div>
+              <h3>Angus & Wagyu Beef</h3>
+              <p>Marbled cuts selected for luxury grills and roasts.</p>
+            </div>
+          </article>
+          <article class="category-card">
+            <div class="category-icon"><i class="fa-solid fa-bowl-rice"></i></div>
+            <div>
+              <h3>Sushi-Grade Seafood</h3>
+              <p>Tuna and roe for raw applications and premium plating.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Why Arctic Fresh</span>
+          <h2 id="benefits-title">A premium import standard built on consistency, traceability, and frozen excellence.</h2>
+          <p>We protect product integrity with controlled handling, documented sourcing, and export-ready packaging from port to plate.</p>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-truck-fast"></i></div>
+            <div>
+              <h3>Cold-chain delivery</h3>
+              <p>Temperature-managed logistics preserve freshness from origin warehouses to final destination.</p>
+            </div>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-award"></i></div>
+            <div>
+              <h3>Premium grading</h3>
+              <p>Only export-quality seafood and meat selections make it into the Arctic Fresh portfolio.</p>
+            </div>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-seedling"></i></div>
+            <div>
+              <h3>Sustainable sourcing</h3>
+              <p>MSC/ASC certified supply chains support responsible fishing and long-term ecosystem health.</p>
+            </div>
+          </article>
+          <article class="benefit-card">
+            <div class="benefit-icon"><i class="fa-solid fa-temperature-low"></i></div>
+            <div>
+              <h3>Frozen at peak quality</h3>
+              <p>Blast-frozen and protected at every stage to lock in texture, flavor, and shelf stability.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="products" aria-labelledby="products-title">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Collection</span>
+          <h2 id="products-title">Explore the Arctic Fresh signature imports.</h2>
+          <p>Filter by category to browse seafood, meat, and sushi-grade selections curated for premium retail and foodservice programs.</p>
+        </div>
+
+        <div class="collection-wrap">
+          <div class="tabs" role="tablist" aria-label="Product categories">
+            <button class="tab-btn active" type="button" role="tab" aria-selected="true" data-filter="all">All</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-filter="seafood">Seafood</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-filter="meat">Meat</button>
+            <button class="tab-btn" type="button" role="tab" aria-selected="false" data-filter="sushi">Sushi</button>
+          </div>
+
+          <div class="product-grid" id="productGrid" aria-live="polite"></div>
+          <p class="filter-note">Every product includes origin details, premium pricing, and quick-add functionality for a seamless buying experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">About</span>
+          <h2>Built for kitchens that demand traceability and the cleanest possible frozen ingredients.</h2>
+          <p>Arctic Fresh partners with certified fisheries, trusted importers, and cold-chain specialists to deliver the purest frozen seafood and meats to chefs, retailers, and discerning households.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="recipes">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Recipes</span>
+          <h2>Ocean-to-table inspiration for modern menus.</h2>
+          <p>From buttery salmon bowls to yakiniku cuts and sashimi plates, Arctic Fresh ingredients are designed to inspire premium menus with reliable frozen supply.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="brand" href="#home" aria-label="Arctic Fresh home">
+            <span class="brand-mark"><i class="fa-solid fa-snowflake"></i></span>
+            <span class="brand-text">
+              <strong style="color:#fff;">Arctic Fresh</strong>
+              <span style="color:rgba(255,255,255,0.68);">Premium frozen imports, handled with cold-chain discipline</span>
+            </span>
+          </a>
+          <p style="margin:1rem 0 0;">
+            We source premium frozen seafood and meats through sustainable, certified supply chains and deliver with
+            ocean-to-table precision for serious culinary buyers.
+          </p>
+          <div class="socials" aria-label="Social media">
+            <a href="#contact" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#contact" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#contact" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#contact" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-columns">
+          <nav class="footer-links" aria-label="Quick links">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#recipes">Recipes</a></li>
+            </ul>
+          </nav>
+
+          <nav class="footer-links" aria-label="Customer service">
+            <h4>Customer Service</h4>
+            <ul>
+              <li><a href="#contact" data-info="shipping">Shipping Details</a></li>
+              <li><a href="#contact" data-info="cold-chain">Cold Chain Promise</a></li>
+              <li><a href="#contact" data-info="returns">Returns & Claims</a></li>
+              <li><a href="#contact" data-info="trade">Trade Accounts</a></li>
+            </ul>
+          </nav>
+
+          <div class="newsletter">
+            <h4>Newsletter</h4>
+            <p>Get sourcing updates, seasonal import drops, and premium recipe ideas in your inbox.</p>
+            <form class="newsletter-form">
+              <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Email address" required />
+              <button type="submit">Subscribe</button>
+            </form>
+            <p class="newsletter-message" id="newsletterMessage" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Arctic Fresh. Premium frozen imports with sustainable sourcing.</span>
+        <span>MSC/ASC certified • Cold-chain monitored • Ocean-to-table ready</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="cart-overlay" id="cartOverlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
+    <div class="drawer-header">
+      <h2 id="cartTitle">Your Cart</h2>
+      <button class="drawer-close" id="closeCart" type="button" aria-label="Close cart">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="drawer-body" id="cartItems" aria-live="polite"></div>
+    <div class="drawer-footer">
+      <div class="drawer-total">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <button class="checkout-btn" id="checkoutButton" type="button">Request Quote / Checkout</button>
+      <button class="secondary-btn" id="clearCartButton" type="button">Clear Cart</button>
+    </div>
+  </aside>
+
+  <div class="modal-overlay" id="modalOverlay" hidden></div>
+  <section class="modal" id="searchModal" aria-labelledby="searchTitle" aria-hidden="true">
+    <div class="modal-header">
+      <h2 id="searchTitle">Search Products</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close search">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form class="search-form" id="searchForm">
+        <input id="searchInput" type="search" placeholder="Search salmon, tuna, wagyu, shrimp..." aria-label="Search product catalog" />
+        <div class="search-actions">
+          <button class="checkout-btn" type="submit">Search</button>
+          <button class="secondary-btn" id="clearSearchButton" type="button">Clear Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="modal" id="infoModal" aria-labelledby="infoTitle" aria-hidden="true">
+    <div class="modal-header">
+      <h2 id="infoTitle">Trade Account</h2>
+      <button class="modal-close" type="button" data-close-modal aria-label="Close information panel">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="modal-body" id="infoBody">
+      <p>Trade buyers can request quotations, cold-chain delivery details, and account setup support through orders@arcticfresh.com.</p>
+    </div>
+  </section>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
